@@ -1,0 +1,2 @@
+# Wechat_MiniProgram
+解决微信小程序用canvas.toTempFilePathSync返回值转base64问题
