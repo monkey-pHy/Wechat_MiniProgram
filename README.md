@@ -1,6 +1,5 @@
-# Wechat_MiniProgram
 
-## 解决微信小游戏用canvas.toTempFilePathSync返回临时文件路径转base64问题
+# 解决微信小游戏用canvas.toTempFilePathSync返回临时文件路径转base64问题
 
 由于项目功能需要，我们需要将小程序通过Canvas截多张图存入临时文件后再转base64传给后台，看了很多博客，都是只能在wx.chooseIamge方法中操作canvas.toTempFilePathSync返回的临时文件路径，但是我们要的不是从相册里选择一张图片的临时路径，我们是需要Canvas截后的图存入临时文件后，再把这个临时路径转为base64格式，网上有博客说canvas.toTempFilePathSync返回的临时文件路径只能用于wx.shareAppMessage（转发功能）里，所以通过几天的查找，这个可能是由于微信的开放数据域的安全限制，如果想要使用可以这个返回值的，可以把这个开放数据域给关闭。
 
