@@ -56,5 +56,10 @@ canvas.toTempFilePathSync返回临时文件路径转base64
 
     let base64 = 'data:image/png;base64,'+ wx.getFileSystemManager().readFileSync  (tempFilePath, "base64");
  ```
+完整代码可git clone，在game.js文件中
 
 但是请注意！！！关闭了微信小游戏开放数据域就代表不能调取用户的社交关系去做游戏的排行榜等功能了。
+
+### 参考文档
+
+1. [微信小程序开放数据域官方文档](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/open-data.html)
